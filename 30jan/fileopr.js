@@ -1,5 +1,3 @@
-console.log("Program started");
-
 const fs = require('fs');
 
 fs.writeFile('data.txt', 'File created', (err) => {
@@ -23,7 +21,6 @@ fs.writeFile('data.txt', 'File created', (err) => {
           if (err) throw err;
           console.log('File renamed');
 
-          // make sure folder exists
           fs.mkdir('folder', { recursive: true }, (err) => {
             if (err) throw err;
 
